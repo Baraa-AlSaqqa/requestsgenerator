@@ -33,11 +33,15 @@ export default class API {
                         method: method
                     });
                 }
+                if (queryOrBody != {}) {
+                    if (queryOrBody.body != undefined ) {
+
+                    }
+                }
                 return fetch(finalPath + (attribute || ''), {
                     method: method,
-                    body: queryOrBody.body != {} ? queryOrBody.body : {},
-                    header: queryOrBody.header != {} ? queryOrBody.header : {},
-                    mode: 'cors'
+                    mode: 'cors',
+                    queryOrBody
                 });
             }
         }

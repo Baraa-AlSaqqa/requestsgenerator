@@ -1,13 +1,16 @@
 {
-  "name": "@bsaqqa/requestsgenerator",
-  "version": "1.0.1",
-  "description": "Generate requests without need writing full request every time ",
-  "main": "index.js",
- 
-  "keywords": [
-    "Generate",
-    "Requests"
-  ],
-  "author": "Baraa Al-Saqqa",
-  "license": "MIT"
+    "name": "@bsaqqa/requestsgenerator",
+    "version": "1.0.1",
+    "description": "Generate requests without need writing full request every time",
+    "main": "index.js",
+    "keywords": [
+        "Generate",
+        "Requests", 
+        "npm",
+        "package"
+    ],
+    "author": "Baraa Al-Saqqa",
+    "license": "MIT",
+    "repository": "Baraa-AlSaqqa/requestsgenerator"
+
 }
