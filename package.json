@@ -1,16 +1,33 @@
 {
     "name": "@bsaqqa/requestsgenerator",
-    "version": "1.0.2",
+    "version": "1.0.4",
     "description": "Generate requests without need writing full request every time",
-    "main": "index.js",
+    "main": "requestsgenerator.js",
+    "scripts": {
+        "test": "npm run build && node test/index.js",
+        "build": "npx babel src/requestsgenerator.js --out-dir ./"
+    },
     "keywords": [
         "Generate",
-        "Requests", 
+        "Requests",
         "npm",
         "package"
     ],
     "author": "Baraa Al-Saqqa",
     "license": "MIT",
-    "repository": "Baraa-AlSaqqa/requestsgenerator"
-
+    "repository": "Baraa-AlSaqqa/requestsgenerator",
+    "devDependencies": {
+        "@babel/core": "^7.1.6",
+        "@babel/plugin-proposal-class-properties": "^7.1.0",
+        "@babel/plugin-proposal-decorators": "^7.1.6",
+        "@babel/plugin-proposal-export-default-from": "^7.0.0",
+        "@babel/plugin-proposal-logical-assignment-operators": "^7.0.0",
+        "@babel/plugin-proposal-optional-chaining": "^7.0.0",
+        "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+        "@babel/polyfill": "^7.0.0",
+        "@babel/preset-env": "^7.1.6",
+        "babel-plugin-transform-runtime": "^6.23.0" 
+    },
+    "dependencies": {
+    }
 }
